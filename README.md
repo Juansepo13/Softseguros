@@ -1,6 +1,6 @@
 # Softseguros - Proyecto de CRUD en Django con React JS
 
-![Softseguros Logo](img/logo_softseguros.png)
+![Softseguros Logo](https://app.softseguros.com/static/images/logo_softseguros.png)
 
 Este proyecto es un CRUD (Create, Read, Update, Delete) que combina Django como backend y React JS como frontend. El objetivo principal de Softseguros es gestionar información sobre seguros, permitiendo a los usuarios crear, leer, actualizar y eliminar registros de seguros de forma intuitiva y eficiente.
 
