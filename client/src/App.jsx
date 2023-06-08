@@ -1,7 +1,19 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Navigation } from "./components/Navigation";
+import { TaskFormPage } from "./pages/TaskFormPage";
+import { TasksPage } from "./pages/TasksPage";
+
 function App() {
   return (
-    <div>Hello World</div>
-  )
+    <BrowserRouter>
+      <Navigation/>
+      <Routes>
+          <Route path="/" element={<Navigate to="/tasks" />} />
+          <Route path="/tasks" element={<TasksPage />} />
+          <Route path="/tasks-create" element={<TaskFormPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
