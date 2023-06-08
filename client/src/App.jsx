@@ -6,11 +6,13 @@ import { TasksPage } from "./pages/TasksPage";
 function App() {
   return (
     <BrowserRouter>
-      <Navigation/>
+      <Navigation />
       <Routes>
           <Route path="/" element={<Navigate to="/tasks" />} />
           <Route path="/tasks" element={<TasksPage />} />
+          <Route path="/tasks/:id" element={<TaskFormPage />} />
           <Route path="/tasks-create" element={<TaskFormPage />} />
+          <Route path="/task/:id" element={<TaskFormPage />} />
       </Routes>
     </BrowserRouter>
   );
