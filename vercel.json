@@ -1,12 +1,26 @@
 {
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "django_crud_api/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "client/$1"
+  "version": 2,
+  "builds": [
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "client/build"
       }
-    ]
-  }
+    },
+    {
+      "src": "django_crud_api/**",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/task",
+      "dest": "django_crud_api/wsgi.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "client/build/index.html"
+    }
+  ]
+}
