@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
 import { TaskFormPage } from "./pages/TaskFormPage";
 import { TasksPage } from "./pages/TasksPage";
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/tasks-create" element={<TaskFormPage />} />
           <Route path="/task/:id" element={<TaskFormPage />} />
       </Routes>
+      <Toaster />
     </BrowserRouter>
   );
 }
