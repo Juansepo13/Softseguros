@@ -20,7 +20,7 @@ export function TaskFormPage() {
     } else {
       await createTask(data);
     }
-    //navigate("/tasks");
+    navigate("/tasks");
   });
 
   useEffect(() =>{
