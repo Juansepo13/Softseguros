@@ -28,3 +28,30 @@ Sigue estos pasos para instalar y ejecutar el proyecto localmente:
 
    ```shell
    git clone https://github.com/Juansepo13/Softseguros.git
+   ```
+2. Navega hasta el directorio del proyecto
+   ```cd Softseguros```
+3. Instala las dependencias del backend
+```pip install -r requirements.txt```
+4. Instala las dependencias del frontend
+```cd frontend
+npm install
+ ```
+5. Inicia el servidor de desarrollo 
+``` npm run dev```
+6. Abre tu navegador web y accede a ```http://localhost:3000``` para ver la aplicación en funcionamiento.
+
+## Estructura del proyecto
+* El proyecto se divide en dos partes principales: el backend construido con Django y el frontend construido con React JS.
+
+* El código fuente del backend se encuentra en el directorio backend/ y contiene todos los archivos relacionados con la configuración de Django, los modelos de datos, las vistas y las rutas de la API RESTful.
+
+* El código fuente del frontend se encuentra en el directorio frontend/ y contiene todos los archivos relacionados con el desarrollo de React JS, incluyendo los componentes, las páginas y los estilos.
+
+# Uso
+* Una vez que hayas iniciado el servidor de desarrollo, podrás acceder a la aplicación en tu navegador web. Aquí hay algunas acciones que puedes realizar:
+
+# Ver la lista de seguros existentes.
+* Crear un nuevo seguro proporcionando la información requerida en el formulario.
+* Actualizar los detalles de un seguro existente.
+* Eliminar un seguro de la lista.
